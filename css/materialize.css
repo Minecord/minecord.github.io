@@ -21,6 +21,10 @@ footer {
   overflow:hidden;
 }
 
+.footer-margin {
+  margin-bottom: 15%;
+}
+
 /* unvisited link */
 footer a:link {
   color: white;

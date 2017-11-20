@@ -3,14 +3,22 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
-body {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
+html {
+  position: relative;
+  min-height: 100%;
 }
 
-main {
-  flex: 1 0 auto;
+body {
+  margin: 0 0 0px; /* bottom = footer height */
+  padding: 0px;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow:hidden;
 }
 
 /* unvisited link */

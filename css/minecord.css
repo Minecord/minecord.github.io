@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.middleContent {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    color: #fafafa;
+}
+
+/* unvisited link */
+footer a:link {
+    color: white;
+}
+
+/* visited link */
+footer a:visited {
+    color: white;
+}
+
+/* mouse over link */
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* selected link */
+footer a:active {
+    color: white;
+}
+
+#wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discord-blurple {
+    background-color: #7289DA !important;
+}
+
+.buttonfix {
+    margin: 4px;
+}
+
+nav {
+    margin-bottom: 6%;
+}
+footer {
+    margin-top: 8%;
+}
+
+@media only screen and (min-width:992px){
+    nav {
+        margin-bottom: 1%;
+    }
+    footer {
+        margin-top: 1%;
+    }
+}

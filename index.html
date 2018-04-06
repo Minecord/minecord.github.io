@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Meta tags -->
     <meta charset="UTF-8">
@@ -10,7 +11,7 @@
     <meta name="description" content="A robust, 24/7 open-source Discord bot for various Minecraft functions.">
     <meta name="og:description" content="A robust, 24/7 open-source Discord bot for various Minecraft functions.">
     <meta name="twitter:description" content="A robust, 24/7 open-source Discord bot for various Minecraft functions.">
-	<meta name="url" content="https://minecord.github.io">
+    <meta name="url" content="https://minecord.github.io">
     <meta name="keywords" content="minecord,discord,bot,minecraft,mc,bots,server,support,guild,help,commands">
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
@@ -24,10 +25,17 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Google Analytics -->
     <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-102328138-2', 'auto');
         ga('send', 'pageview');
     </script>
@@ -45,77 +53,81 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
+
 <body class="grey darken-3">
 
-<header>
-    <nav>
-        <div class="nav-wrapper green">
-            <div class="container">
-                <a href="index.html" class="brand-logo">Minecord</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="commands.html">Commands</a></li>
-                    <li><a href="help.html">Help</a></li>
-                    <li><a class="waves-effect waves-light btn green darken-2">INVITE</a></li>
-                </ul>
-                <ul class="sidenav" id="mobile-demo">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="commands.html">Commands</a></li>
-                    <li><a href="help.html">Help</a></li>
-                    <li><a class="waves-effect waves-light btn green darken-2">INVITE</a></li>
-                </ul>
+    <header>
+        <nav>
+            <div class="nav-wrapper green">
+                <div class="container">
+                    <a href="index.html" class="brand-logo">Minecord</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="commands.html">Commands</a></li>
+                        <li><a href="help.html">Help</a></li>
+                        <li><a class="waves-effect waves-light btn green darken-2">INVITE</a></li>
+                    </ul>
+                    <ul class="sidenav" id="mobile-demo">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="commands.html">Commands</a></li>
+                        <li><a href="help.html">Help</a></li>
+                        <li><a class="waves-effect waves-light btn green darken-2">INVITE</a></li>
+                    </ul>
+                </div>
+
             </div>
+        </nav>
+    </header>
 
-        </div>
-    </nav>
-</header>
-
-<main>
-    <div class="middleContent">
-        <img src="logo.png" alt="logo" class="circle responsive-img"><br>
-        <h3>Minecord</h3>
-        <p class="light">A robust, 24/7 open-source Discord bot for various Minecraft functions</p><br>
+    <main>
+        <div class="middleContent">
+            <img src="logo.png" alt="logo" class="circle responsive-img">
+            <br>
+            <h3>Minecord</h3>
+            <p class="light">A robust, 24/7 open-source Discord bot for various Minecraft functions</p>
+            <br>
             <div id="wrapper" class="hide-on-small-only">
                 <a class="waves-effect waves-light btn green darken-1 buttonfix" href="http://github.com/Tisawesomeness/Minecord"><i class="fa fa-github left" aria-hidden="true"></i>GitHub</a>
                 <a class="waves-effect waves-light btn discord-blurple buttonfix" href="https://bot.discord.io/minecord">Invite Now</a>
                 <a class="waves-effect waves-light btn green darken-1 buttonfix" href="commands.html">Commands</a>
             </div>
-        <div class="hide-on-med-and-up">
-            <div class="row">
-                <div class="col s12">
-                    <a class="waves-effect waves-light btn green darken-1 buttonfix" href="http://github.com/Tisawesomeness/Minecord"><i class="fa fa-github left" aria-hidden="true"></i>GitHub</a>
-                    <a class="waves-effect waves-light btn discord-blurple buttonfix" href="https://bot.discord.io/minecord">Invite Now</a>
-                    <a class="waves-effect waves-light btn green darken-1 buttonfix" href="commands.html">Commands</a>
+            <div class="hide-on-med-and-up">
+                <div class="row">
+                    <div class="col s12">
+                        <a class="waves-effect waves-light btn green darken-1 buttonfix" href="http://github.com/Tisawesomeness/Minecord"><i class="fa fa-github left" aria-hidden="true"></i>GitHub</a>
+                        <a class="waves-effect waves-light btn discord-blurple buttonfix" href="https://bot.discord.io/minecord">Invite Now</a>
+                        <a class="waves-effect waves-light btn green darken-1 buttonfix" href="commands.html">Commands</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
 
-<footer class="page-footer green">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Minecord</h5>
-                <p class="grey-text text-lighten-4">An original and robust Minecraft™ bot for Discord. Minecord has a wide range of utilities, from player IDs to Minecraft recipes. Various functions, active development and staff makes Minecord the perfect bot for you Minecraft Discord server.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-                <a href="https://discordbots.org/bot/292279711034245130">
-                    <img src="https://discordbots.org/api/widget/292279711034245130.png" alt="Discord Bots"/>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
+    <footer class="page-footer green">
         <div class="container">
-            Minecord by Tis_awesomeness. Website built with <3 by Samuel Simão (Mucapapipa).
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Minecord</h5>
+                    <p class="grey-text text-lighten-4">An original and robust Minecraft™ bot for Discord. Minecord has a wide range of utilities, from player IDs to Minecraft recipes. Various functions, active development and staff makes Minecord the perfect bot for you Minecraft Discord server.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <a href="https://discordbots.org/bot/292279711034245130">
+                        <img src="https://discordbots.org/api/widget/292279711034245130.png" alt="Discord Bots" />
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+        <div class="footer-copyright">
+            <div class="container">
+                Minecord by Tis_awesomeness. Website built with
+                <3 by Samuel Simão (Mucapapipa). </div>
+            </div>
+    </footer>
 
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.js"></script>
-<script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
 </body>
+
 </html>

@@ -72,12 +72,20 @@
             </thead>
             <tbody>
             <tr>
-                <td><code>&amp;help [command|module]</code></td>
+                <td><code>&amp;help [&lt;command&gt;|&lt;module&gt;|extra]</code></td>
                 <td>Displays help for the bot, a command, or a module.</td>
             </tr>
             <tr>
                 <td><code>&amp;info</code></td>
                 <td>Shows the bot info.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;prefix [&lt;prefix&gt;]</code></td>
+                <td>Change the prefix.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;settings [&lt;setting&gt; &lt;value&gt;]</code></td>
+                <td>Change the bot's settings, including prefix.</td>
             </tr>
             <tr>
                 <td><code>&amp;invite</code></td>
@@ -93,7 +101,105 @@
             </tr>
             </tbody>
         </table><br>
-        <h3 class="light">General Commands</h3>
+        <h3 class="light">Player Commands</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><code>&amp;profile &lt;player&gt;</code></td>
+                <td>Shows info for a Minecraft account.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;history &lt;player&gt;</code></td>
+                <td>Shows a player's name history.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;uuid &lt;username|uuid&gt;</code></td>
+                <td>Shows UUID info for a player or entity.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;skin &lt;player&gt;</code></td>
+                <td>Shows an image of a player's skin.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;cape &lt;player&gt;</code></td>
+                <td>Shows a player's capes.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;avatar &lt;username|uuid&gt; [&lt;scale&gt;] [&lt;overlay?&gt;]</code></td>
+                <td>Shows an image of the player's avatar.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;head &lt;username|uuid&gt; [&lt;scale&gt;] [&lt;overlay?&gt;]</code></td>
+                <td>Shows an image of the player's head.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;body &lt;username|uuid&gt; [&lt;scale&gt;] [&lt;overlay?&gt;]</code></td>
+                <td>Shows an image of the player's body.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;ansi &lt;username|uuid&gt; [&lt;overlay?&gt;]</code></td>
+                <td>Converts a player's avatar to a colored text message.</td>
+            </tr>
+            </tbody>
+        </table>
+        <h3 class="light">Utility Commands</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><code>&amp;status</code></td>
+                <td>Checks the status of Mojang servers.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;server &lt;address&gt;[:&lt;port&gt;]</code></td>
+                <td>Fetches the stats of a Minecraft server.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;recipe &lt;item name|id&gt;</code></td>
+                <td>Looks up recipes.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;item &lt;item name|id&gt;</code></td>
+                <td>Looks up an item.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;ingredient &lt;item name|id&gt;</code></td>
+                <td>Looks up the recipes containing an ingredient.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;codes</code></td>
+                <td>Lists the available chat codes.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;color &lt;color&gt;</code></td>
+                <td>Look up a color.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;seed &lt;seed&gt;</code></td>
+                <td>Converts some text to a seed number.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;shadow &lt;seed&gt;</code></td>
+                <td>Gets the shadow of a seed.</td>
+            </tr>
+            <tr>
+                <td><code>&amp;sha1 &lt;text&gt;</code></td>
+                <td>Computes the sha1 hash of some text.</td>
+            </tr>
+            </tbody>
+        </table><br>
+        <h3 class="light">Discord Commands</h3>
         <table>
             <thead>
             <tr>
@@ -123,109 +229,11 @@
                 <td>Cleans the bot messages.</td>
             </tr>
             <tr>
-                <td><code>&amp;perms [channel]</code></td>
+                <td><code>&amp;perms [&lt;channel&gt;]</code></td>
                 <td>Test the bot's permissions in a channel.</td>
             </tr>
-            <tr>
-                <td><code>&amp;settings [setting] [value]</code></td>
-                <td>Change the bot's settings, including prefix.</td>
-            </tr>
             </tbody>
         </table><br>
-        <h3 class="light">Utility Commands</h3>
-        <table>
-            <thead>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td><code>&amp;status</code></td>
-                <td>Checks the status of Mojang servers.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;sales</code></td>
-                <td>Looks up the sale statistics.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;codes</code></td>
-                <td>Lists the available chat codes.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;color &lt;color&gt;</code></td>
-                <td>Look up a color.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;server &lt;address&gt;[:port]</code></td>
-                <td>Fetches the stats of a Minecraft server.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;shadow &lt;seed&gt;</code></td>
-                <td>Gets the shadow of a seed.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;sha1 &lt;text&gt;</code></td>
-                <td>Computes the sha1 hash of some text.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;item &lt;item name|id&gt;</code></td>
-                <td>Looks up an item.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;recipe &lt;item name|id&gt;</code></td>
-                <td>Looks up recipes.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;ingredient &lt;item name|id&gt;</code></td>
-                <td>Looks up the recipes containing an ingredient.</td>
-            </tr>
-            </tbody>
-        </table><br>
-        <h3 class="light">Player Commands</h3>
-        <table>
-            <thead>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td><code>&amp;uuid &lt;username&gt;</code></td>
-                <td>Gets the UUID of a player.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;history &lt;username|uuid&gt;</code></td>
-                <td>Gets the name history of a player.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;avatar &lt;username|uuid&gt; [overlay?]</code></td>
-                <td>Gets the avatar of a player.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;head &lt;username|uuid&gt; [overlay?]</code></td>
-                <td>Gets the head of a player</td>
-            </tr>
-            <tr>
-                <td><code>&amp;body &lt;username|uuid&gt; [overlay?]</code></td>
-                <td>Gets the body of a player.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;skin &lt;username|uuid&gt;</code></td>
-                <td>Gets the skin of a player.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;cape &lt;username|uuid&gt;</code></td>
-                <td>Gets the cape of a player.</td>
-            </tr>
-            <tr>
-                <td><code>&amp;profile &lt;username|uuid&gt;</code></td>
-                <td>Get info on a Minecraft account.</td>
-            </tr>
-            </tbody>
-        </table>
     </div>
 </main>
 

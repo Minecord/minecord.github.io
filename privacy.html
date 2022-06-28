@@ -72,7 +72,7 @@
             <li>Date and time of visit</li>
             <li>Title of the page being visited</li>
             <li>URL of the page being visited</li>
-            <li>URL of the page that was viewed prior to the current page (query parameters stripped)</li>
+            <li>URL of the page that was viewed prior to the current page</li>
             <li>Screen resolution</li>
             <li>Time in local timezone</li>
             <li>Files that were clicked and downloaded</li>
@@ -92,7 +92,9 @@
             window.addEventListener("message", e => {
                 if (e.origin === "https://minecord.github.io" && e.data === "loaded") {
                     loaded = true;
+                    document.getElementById("optOutFrame").style.display = "";
                     document.getElementById("optOutLoading").style.display = "none";
+                    document.getElementById("optOutError").style.display = "none";
                 }
             }, false);
             window.setTimeout(function() {

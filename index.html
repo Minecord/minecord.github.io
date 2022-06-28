@@ -34,6 +34,23 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    <!-- Matomo: privacy-respecting analytics -->
+    <!-- Opt-out at minecord.github.io/privacy -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="https://matomo.tis.codes/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+
 </head>
 
 <body class="grey darken-3">
@@ -110,8 +127,9 @@
         <div class="footer-copyright">
             <div class="container">
                 <center>
-                    Minecord by <a href="https://github.com/Tisawesomeness">Tis_awesomeness</a> | Website built with &lt;3 by Samuel Simão (Mucapapipa) | <a href="mailto:tisawesomenesss@gmail.com">Contact</a> <br>
-                    "Minecraft" is a trademark of Mojang Synergies AB | Not affiliated with Mojang or Discord Inc.
+                    <a href="privacy.html">Privacy</a> &middot; <a href="tis_dev@protonmail.com">Contact</a><br>
+                    Minecord by <a href="https://github.com/Tisawesomeness">Tis_awesomeness</a> &middot; Website built with &lt;3 by Samuel Simão (Mucapapipa)<br>
+                    "Minecraft" is a trademark of Mojang Synergies AB &middot; Not affiliated with Mojang or Discord Inc.
                 </center>
             </div>
         </div>

@@ -24,7 +24,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Website title -->
-    <title>Minecord • Help</title>
+    <title>Minecord • Privacy</title>
 
     <!-- Materialize and additional stylesheet -->
     <link rel="stylesheet" href="css/materialize.css">
@@ -32,23 +32,6 @@
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Matomo: privacy-respecting analytics -->
-    <!-- Opt-out at minecord.github.io/privacy -->
-    <script>
-        var _paq = window._paq = window._paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u="https://matomo.tis.codes/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '2']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-        })();
-    </script>
-    <!-- End Matomo Code -->
 
 </head>
 <body class="grey darken-3 white-text">
@@ -79,37 +62,54 @@
 
 <main>
     <div class="container">
-        <h3 class="light">Help</h3>
-        You can get help in the official Minecord Server.
-        <br>
-        <a class="waves-effect waves-light buttonfix  btn green darken-1" href="http://discord.io/minecord">Join Now</a>
-        <h3 class="light">Frequently Asked Questions</h3>
-        <ul class="collapsible popout black-text" data-collapsible="accordion">
-            <li>
-                <div class="collapsible-header">Is the bot 24/7?</div>
-                <div class="collapsible-body grey lighten-5"><span>Yes, the bot is hosted 24/7 with little downtime for maintenance.</span></div>
-            </li>
-            <li>
-                <div class="collapsible-header">Why can't I use &amp;purge?</div>
-                <div class="collapsible-body grey lighten-5"><span>You need the <i>Manage Messages</i> permission.</span></div>
-            </li>
-            <li>
-                <div class="collapsible-header">Why doesn't &amp;skin @b1nzy work?</div>
-                <div class="collapsible-body grey lighten-5"><span>The bot uses Minecraft accounts to look up player data, not Discord accounts.</span></div>
-            </li>
-            <li>
-                <div class="collapsible-header">Can I link my Minecraft account?</div>
-                <div class="collapsible-body grey lighten-5"><span>Sorry, but right now that's not possible. If enough people want to sync their Minecraft and Discord accounts then it'll be added.</span></div>
-            </li>
-            <li>
-                <div class="collapsible-header">What is an elevated user and how do I become one?</div>
-                <div class="collapsible-body grey lighten-5"><span>Elevated users have access to bot administration commands like <i>&amp;say</i> and <i>&amp;reload</i>. There is no way to become an elevated user.</span></div>
-            </li>
-            <li>
-                <div class="collapsible-header ">Can I self-host the bot?</div>
-                <div class="collapsible-body grey lighten-5"><span>If you want to customize the bot for your specific server, check out the <a href="https://github.com/Tisawesomeness/Minecord">GitHub</a>. There are loads of configuration options for anyone who wants to self-host on their own hardware.</span></div>
-            </li>
+        <h3 class="light">Privacy</h3>
+        <p>This website uses <a href="https://matomo.org/">Matomo</a>, an open source, privacy-respecting web analytics platform. I use Matomo to analyze how users interact with the website, gauge interest, identify issues, and recognize and stop misuse.</p>
+        <p>If you wish to opt-out, follow the instructions in the opt-out section of this page.</p>
+        <h4 class="light">What Information is Collected</h4>
+        <p>This website does not collect any personally identifiable information (PII). Matomo processes the following data:</p>
+        <ul class="light">
+            <li>Anonymized IP addresses (last two bytes stripped)</li>
+            <li>Date and time of visit</li>
+            <li>Title of the page being visited</li>
+            <li>URL of the page being visited</li>
+            <li>URL of the page that was viewed prior to the current page (query parameters stripped)</li>
+            <li>Screen resolution</li>
+            <li>Time in local timezone</li>
+            <li>Files that were clicked and downloaded</li>
+            <li>Link clicks to an outside domain</li>
+            <li>Page generation time</li>
+            <li>Approximate geolocation based on the anonymized IP</li>
+            <li>Main language of the browser</li>
+            <li>User agent of the browser</li>
         </ul>
+        <p>The data is stored on servers hosted by <a href="https://theendlessweb.com/">Endless Hosting</a> in the United States.</p>
+        <p>The data is retained for a maximum of one year. Aggregate metrics (such as number of page views, bounce rate, etc.) may be retained indefinitely.</p>
+        <h4 class="light">Contact</h4>
+        <p>Contact me at <a href="tis_dev@protonmail.com">tis_dev@protonmail.com</a>.</p>
+        <h4 class="light">Opt-out of website tracking</h4>
+        <script>
+            var loaded = false;
+            window.addEventListener("message", e => {
+                if (e.origin === "https://minecord.github.io" && e.data === "loaded") {
+                    loaded = true;
+                    document.getElementById("optOutLoading").style.display = "none";
+                }
+            }, false);
+            window.setTimeout(function() {
+                if (!loaded) {
+                    document.getElementById("optOutFrame").style.display = "none";
+                    document.getElementById("optOutLoading").style.display = "none";
+                    document.getElementById("optOutError").style.display = "";
+                }
+            }, 5000);
+        </script>
+        <div id="optOutLoading">
+            <p>Loading...</p>
+        </div>
+        <div id="optOutError" style="display:none">
+            <p>The opt-out iframe failed to load. If it was blocked by an ad-blocker, you are not being tracked and do not need to opt-out.</p>
+        </div>
+        <iframe id="optOutFrame" onload='javascript:window.parent.postMessage("loaded", "https://minecord.github.io");' style="width:100%;border:none;overflow:hidden;" src="https://matomo.tis.codes/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=424242&fontColor=ffffff&fontSize=15px&fontFamily=Ubuntu"></iframe>
     </div>
 </main>
 
@@ -145,5 +145,6 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.js"></script>
 <script type="text/javascript" src="js/init.js"></script>
+<script type="text/javascript" src="js/iframeResizer.min.js"></script>
 </body>
 </html>

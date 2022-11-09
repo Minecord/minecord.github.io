@@ -62,11 +62,23 @@
 
 <main>
     <div class="container">
+
         <h3 class="light">Privacy</h3>
-        <p>This website uses <a href="https://matomo.org/">Matomo</a>, an open source, privacy-respecting web analytics platform. I use Matomo to analyze how users interact with the website, gauge interest, identify issues, and recognize and stop misuse.</p>
-        <p>If you wish to opt-out, follow the instructions in the opt-out section of this page.</p>
-        <h4 class="light">What Information is Collected</h4>
-        <p>This website does not collect any personally identifiable information (PII). Matomo processes the following data:</p>
+        <p>Last Updated: November 9, 2022</p>
+
+        <h4 class="light">Introduction</h4>
+        <p>By inviting the publicly-hosted instance of Minecord to your Discord server, sending commands to the bot, or visiting this website, you agree that you acknowledge and agree to the collection and use of information according to the Privacy Policy.</p>
+        <p>This website uses <a href="https://matomo.org/">Matomo</a>, an open source, privacy-respecting web analytics platform. Matomo does not collect personally identifiable information (PII), or any information on the Terms of Service or the Privacy Policy pages.</p>
+        <p>If you wish to opt-out of Matomo analytics, follow the instructions in the opt-out section of this page.</p>
+        
+        <h4 class="light">Information Collection and Use</h4>
+        <p>The bot processes the following data:</p>
+        <ul class="light">
+          <li>Discord user and server IDs</li>
+          <li>Aggregate command usage statistics</li>
+        </ul>
+        <p>The information the bot collects is used only for the purposes of providing and improving the bot's functionality. The information may be retained indefinitely to continue providing the bot's functionality.</p>
+        <p>This website uses Matomo analytics for the purposes of gauging interest in the bot and finding ways to improve the bot. Matomo does not collect personally identifiable information (PII). Matomo processes the following data:</p>
         <ul class="light">
             <li>Anonymized IP addresses (last two bytes stripped)</li>
             <li>Date and time of visit</li>
@@ -82,10 +94,22 @@
             <li>Main language of the browser</li>
             <li>User agent of the browser</li>
         </ul>
+        <p>The analytics data is retained for a maximum of one year. Aggregate metrics (such as number of page views, bounce rate, etc.) may be retained indefinitely.</p>
         <p>The data is stored on servers hosted by <a href="https://theendlessweb.com/">Endless Hosting</a> in the United States.</p>
-        <p>The data is retained for a maximum of one year. Aggregate metrics (such as number of page views, bounce rate, etc.) may be retained indefinitely.</p>
+
+        <h4 class="light">Third-Party Content</h4>
+        <p>Several bot commands link to third-party content such as Minecraft skins or Minecraft server listings. The bot has no control over, and assumes no responsibility for any third-party content. If third-party content is violating your privacy, then you should contact the host of that content.</p>
+        <p>The bot and website link to third-party websites such as NameMC. We advise you to read the Privacy Policy of these websites. The bot has no control over, and assumes no responsibility for the privacy policies or practices of any third-party websites.</p>
+
+        <h4 class="light">Deletion of Data</h4>
+        <p>If you would like your data deleted, contact us at the link at the bottom of the page.</p>
+
+        <h4 class="light">Modifications</h4>
+        <p>We may update the Privacy Policy at any time by posting the updated Privacy Policy on this site.</p>
+
         <h4 class="light">Contact</h4>
-        <p>Contact me at <a href="tis_dev@protonmail.com">tis_dev@protonmail.com</a>.</p>
+        <p>If you have any comments or questions, contact us at <a href="tis_dev@protonmail.com">tis_dev@protonmail.com</a>.</p>
+
         <h4 class="light">Opt-out of website tracking</h4>
         <script>
             var loaded = false;
@@ -112,6 +136,7 @@
             <p>The opt-out iframe failed to load. If it was blocked by an ad-blocker, you are not being tracked and do not need to opt-out.</p>
         </div>
         <iframe id="optOutFrame" onload='javascript:window.parent.postMessage("loaded", "https://minecord.github.io");' style="width:100%;border:none;overflow:hidden;" src="https://matomo.tis.codes/index.php?module=CoreAdminHome&action=optOut&language=en&backgroundColor=424242&fontColor=ffffff&fontSize=15px&fontFamily=Ubuntu"></iframe>
+
     </div>
 </main>
 

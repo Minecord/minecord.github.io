@@ -71,3 +71,85 @@ footer {
         margin-top: 1%;
     }
 }
+
+.gaia-card {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #456baa;
+    border: 2px solid #2d4a70;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+    max-width: 450px;
+    text-decoration: none !important;
+}
+
+.gaia-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.gaia-logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-left: 1rem;
+    flex-shrink: 0;
+}
+
+.gaia-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.gaia-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.gaia-description {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.gaia-card a {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.gaia-card a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+@media (max-width: 768px) {
+    .gaia-card {
+        max-width: 375px;
+        padding: 0.75rem;
+    }
+
+    .gaia-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .gaia-title {
+        font-size: 0.9rem;
+    }
+
+    .gaia-description {
+        font-size: 0.75rem;
+    }
+}
